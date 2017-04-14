@@ -14,7 +14,7 @@ class  SuggestUser
 		$calling=new ApiCallingData();
 		$calling->addApiKey($BASE_URL,$apikey);
 	
-		$response=$calling->apiCalling(0,$data1,"suggestUsersToUser/ids/".$userId);
+		$response=$calling->apiCalling(0,$data1,"suggestUsersToUser/details/".$userId);
 		return $response;
 		
 	}

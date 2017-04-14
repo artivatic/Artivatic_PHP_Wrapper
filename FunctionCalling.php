@@ -127,14 +127,21 @@ $ApiKey='o/bsjA45eCg68wzM0WUvCg==';
 
 // /*
 //  * 
-//  * Interect Api
+//  * Interect Api   
+// {
+// 	"level":9,
+// 	"predictId":"1_oida"
+			
+// }
 //  */
 
 // $interct=new InterectAPiCalling();
 // $userId="1";  //Add the value of userid
 // $productId="f823"; // Add the value of productId}
 // $interactLevel=9; //Add the value of interect level;
-// echo $interct->interectAPi($BaseUrl,$ApiKey,"{$userId}","{$productId}",$interactLevel);
+// //echo $interct->interectAPi($BaseUrl,$ApiKey,"{$userId}","{$productId}",$interactLevel);
+// //OR
+// echo $interct->interectPredictionAPi($BaseUrl,$ApiKey,"{$userId}","{$productId}",$interactLevel,"{$predictId}");
 
 
 

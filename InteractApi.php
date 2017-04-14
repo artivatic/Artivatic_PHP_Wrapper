@@ -16,6 +16,22 @@ class  InterectAPiCalling
 	
 	
 }
+public function interectPredictionAPi($BASE_URL,$apikey,$userId,$productId,$interactLevel,$predictId)
+{
+	$urladd='interact/'.$userId.'/'.$productId;
+	
+	
+	$arr=array('level'=>$interactLevel,'predictId'=>$predictId);
+	echo json_encode($arr);
+	
+	$calling=new ApiCallingData();
+	$calling->addApiKey($BASE_URL,$apikey);
+	echo $urladd;
+	$response=$calling->apiCalling(0,$arr,$urladd);
+	return $response;
+	
+	
+}
 }
 
 

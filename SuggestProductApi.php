@@ -12,7 +12,7 @@ class SuggestProduct
 		
 		$calling=new ApiCallingData();
 		$calling->addApiKey($BASE_URL,$apikey);
-		$response=$calling->apiCalling(0,$data1,"suggestUsersToProduct/ids/".$productId);
+		$response=$calling->apiCalling(0,$data1,"suggestUsersToProduct/details/".$productId);
 		return $response;
 		
 	}
